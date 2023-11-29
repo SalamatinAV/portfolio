@@ -35,6 +35,7 @@ $portfolio-theme: mat.define-light-theme(
 @include mat.all-component-themes($portfolio-theme);
 @import "/src/app/general-styles/my-works.scss";
 * {
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -59,20 +60,23 @@ body {
   right: 0;
   padding: 20px 8px;
 }
+.block-information {
+  background-color: rgb(59 59 59 / 89%);
+  width: 90%;
+  padding: 9px;
+  border: 2px solid #999999;
+  border-radius: 8px;
+  margin: 3px 0;
+  height: fit-content;
+}
 .works-content {
   padding: 25px 8px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 450px 1fr;
+  grid-template-rows: 300px 1fr;
   .works-link {
     grid-column: 1/2;
     grid-row: 1/2;
-    // background-color: rgb(214, 18, 18);
     display: grid;
     justify-items: center;
     align-items: center;
@@ -80,18 +84,16 @@ body {
   .works-info {
     grid-column: 2/3;
     grid-row: 1/3;
-    background-color: gray;
   }
 }
 @media (max-width: 778px) {
   .works-content {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 300px 1fr;
 
     .works-info {
       grid-column: 1/2;
       grid-row: 2/3;
-      background-color: gray;
     }
   }
 }
@@ -104,3 +106,20 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+// =========================================================
+//                      Scroll
+// =========================================================
+*::-webkit-scrollbar {
+  width: 8px; /* ширина всей полосы прокрутки */
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(56, 54, 54); /* цвет зоны отслеживания */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(116, 113, 113); /* цвет бегунка */
+  border-radius: 10px; /* округлось бегунка */
+}
+// =================================================================

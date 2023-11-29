@@ -1,7 +1,6 @@
 .img-link {
   display: inline-block;
   margin: 0 10px;
-  //  width: 80%;
   max-width: 400px;
   height: 90%;
   border: 2px solid black;
@@ -14,7 +13,7 @@
     position: relative;
     .icon-fonts {
       font-size: 40px;
-      color: #ffffffb5;
+      color: #ffffff;
       width: 40px;
       height: 40px;
       position: absolute;
@@ -30,9 +29,25 @@
     }
   }
 }
+.works-info {
+  display: flex;
+  justify-content: center;
+  ul {
+    padding-left: 20px;
+  }
+  p {
+    line-height: 1.5;
+    margin: 15px 0;
+  }
+  li {
+    margin: 15px 0;
+  }
+  strong {
+    color: gray;
+  }
+}
 
 :hover.img-link {
-  transform: scale(1.01);
   background-color: black;
   border: 2px solid blue;
 }

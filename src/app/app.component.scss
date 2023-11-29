@@ -8,7 +8,7 @@
     min-height: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    background-color: rgba(0, 255, 255, 0.514);
+    background-color: rgb(0 0 0 / 51%);
   }
   //   ============================ HEADER
 }
@@ -25,19 +25,28 @@
       align-items: center;
       .logo {
         position: relative;
-        display: inline-flex;
-        flex-direction: column;
+
         padding: 5px;
         border-left: 2px solid yellow;
         .logo-header {
-          font-size: clamp(2px, 3vw, 27px);
-          letter-spacing: clamp(2px, 3vw, 15px);
+          font-size: 29px;
+          letter-spacing: 11px;
           color: white;
         }
         .logo-footer {
-          font-size: clamp(2px, 3vw, 12px);
-          letter-spacing: clamp(2px, 3vw, 20px);
+          font-size: 13px;
+          letter-spacing: 17px;
           color: white;
+        }
+        @media (max-width: 778px) {
+          .logo-header {
+            font-size: 22px;
+            letter-spacing: 4px;
+          }
+          .logo-footer {
+            font-size: 10px;
+            letter-spacing: 9px;
+          }
         }
       }
       .logo::after {
@@ -65,10 +74,8 @@
     justify-content: center;
     align-items: center;
     .link {
-      max-width: 300px;
-      width: 100%;
       display: flex;
-      justify-content: space-between;
+      gap: 20px;
       a {
         position: relative;
         cursor: pointer;

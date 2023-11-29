@@ -10,10 +10,22 @@ import { MatIconModule } from '@angular/material/icon';
 import { MyWorksComponent } from 'src/app/components/my-works/my-works.component';
 import { ClockAngularComponent } from 'src/app/components/my-works-components/clock-angular/clock-angular.component';
 import { ClockJsComponent } from 'src/app/components/my-works-components/clock-js/clock-js.component';
+import { ImageFinderComponent } from 'src/app/components/my-works-components/image-finder/image-finder.component';
+import { TodoAngularComponent } from 'src/app/components/my-works-components/todo-angular/todo-angular.component';
+import { CalculatorComponent } from 'src/app/components/my-works-components/calculator/calculator.component';
+import { ExchangeRateComponent } from 'src/app/components/my-works-components/exchange-rate/exchange-rate.component';
 
 @NgModule({
   exports: [MyWorksComponent],
-  declarations: [MyWorksComponent, ClockAngularComponent, ClockJsComponent],
+  declarations: [
+    MyWorksComponent,
+    ClockAngularComponent,
+    ClockJsComponent,
+    ImageFinderComponent,
+    TodoAngularComponent,
+    CalculatorComponent,
+    ExchangeRateComponent,
+  ],
   imports: [
     CommonModule,
     RouterModule,
