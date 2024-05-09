@@ -1,0 +1,41 @@
+.padding {
+  padding: 0;
+}
+
+:host ::ng-deep {
+  .mat-mdc-tab-body-wrapper {
+    position: absolute;
+    top: 48px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  // ================
+  .mat-mdc-tab-group,
+  .mat-mdc-tab-nav-bar {
+    --mat-tab-header-active-focus-indicator-color: yellow;
+    --mdc-tab-indicator-active-indicator-color: yellow;
+    --mat-tab-header-active-hover-label-text-color: rgb(243, 243, 243);
+    --mat-tab-header-disabled-ripple-color: rgb(255 255 255 / 38%);
+    --mat-tab-header-pagination-icon-color: #ffeb3b;
+    --mat-tab-header-inactive-label-text-color: rgb(249 245 245 / 60%);
+    --mat-tab-header-active-label-text-color: #ffeb3b;
+    --mat-tab-header-active-ripple-color: #ffffff;
+    --mat-tab-header-inactive-ripple-color: #ffffff;
+    --mat-tab-header-inactive-focus-label-text-color: rgb(255 255 255 / 60%);
+    --mat-tab-header-inactive-hover-label-text-color: rgb(255 250 250 / 60%);
+    --mat-tab-header-active-focus-label-text-color: #fbfbfb;
+    --mat-tab-header-active-hover-indicator-color: #ffffff;
+  }
+
+  .mat-mdc-tab .mdc-tab__text-label {
+    color: rgb(255, 255, 255);
+  }
+  .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label {
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .mat-mdc-tab-header {
+    background-color: rgba(0, 0, 0, 0.616);
+  }
+}

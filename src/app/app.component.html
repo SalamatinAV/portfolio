@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <header class="header">
+    <div class="conteiner header-grid">
+      <div class="logo-main">
+        <div class="logo">
+          <p class="logo-header">FrontEnd</p>
+          <p class="logo-footer">developer</p>
+        </div>
+      </div>
+      <div class="link-main">
+        <nav class="link">
+          <a routerLink="aboutMe" routerLinkActive="active-link">обо мне</a>
+          <a routerLink="myWorks" routerLinkActive="active-link">мои работы</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="conteiner">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

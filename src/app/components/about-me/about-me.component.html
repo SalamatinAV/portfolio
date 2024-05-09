@@ -1,0 +1,87 @@
+<div class="content about-me">
+  <div class="foto">
+    <div class="block-img">
+      <img
+        class="foto-img"
+        src="./assets/img/photo_5276485087300538837_y.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="about">
+    <div
+      class="block-information"
+      style="
+        width: 85%;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+      "
+    >
+      <h3>Контактная информация</h3>
+      <p class="shared" style="font-size: 20px">Саламатин Андрей</p>
+      <p class="shared">
+        <span class="span-width">Email:</span>
+        <a href="mailto:salamatin.dev@gmail.com">{{
+          "salamatin.dev@gmail.com"
+        }}</a>
+      </p>
+      <p class="shared">
+        <span class="span-width">Linkedin:</span>
+
+        <a href="https://www.linkedin.com/in/salamatin-dev/" target="_blank"
+          >linkedin.com/in/salamatin-dev</a
+        >
+      </p>
+      <p class="shared">
+        <span class="span-width">Github:</span>
+
+        <a href="https://github.com/SalamatinAV" target="_blank"
+          >github.com/SalamatinAV</a
+        >
+      </p>
+    </div>
+  </div>
+  <div class="info">
+    <div class="block-information">
+      <h3>Профиль</h3>
+      <p class="shared">
+        Я начинающий Front-end Developer с более чем годом обучения и опытом
+        выполнения пет-проектов. Активно осваиваю JavaScript и Angular. Ищу
+        возможность применить полученные знания в реальных проектах и продолжить
+        профессиональное развитие.
+      </p>
+    </div>
+
+    <div class="block-information">
+      <h3>Образование</h3>
+      <p class="shared">ОНАС им. О.С Попова 2010 – 2015</p>
+      <p class="shared">• Специалист радио и телевидения</p>
+    </div>
+    <div class="block-information">
+      <h3>Знание языков</h3>
+      <p class="shared">• Русский</p>
+      <p class="shared">• Украинский</p>
+      <p class="shared">• Английский</p>
+    </div>
+    <div class="block-information">
+      <h3>Предыдущий опыт работы</h3>
+      <p class="shared">
+        Сборщик стабилизаторов и источников бесперебойного питания(ИБП) 2011 –
+        2023
+      </p>
+      <p class="shared">
+        • Ответственность за сборку и тестирование стабилизаторов напряжения и
+        ИБП
+      </p>
+      <p class="shared">• Ремонт и настройка оборудования</p>
+    </div>
+    <div class="block-information">
+      <h3>Навыки</h3>
+      <p class="shared skills-flex">
+        <span class="skills" *ngFor="let item of skills">{{ item }} </span>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+.img-link {
+  display: inline-block;
+  margin: 0 10px;
+  max-width: 400px;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.4s;
+  .image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .icon-fonts {
+      font-size: 40px;
+      color: #ffffff;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: black;
+      border-radius: 9px 0 0 0;
+    }
+    .works-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.works-info {
+  display: flex;
+  justify-content: center;
+  ul {
+    padding-left: 20px;
+  }
+  p {
+    line-height: 1.5;
+    margin: 15px 0;
+  }
+  li {
+    margin: 15px 0;
+  }
+  strong {
+    color: gray;
+  }
+}
+
+:hover.img-link {
+  background-color: black;
+  border: 2px solid blue;
+}
